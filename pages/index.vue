@@ -8,7 +8,7 @@
         </v-snackbar>
 
         <v-card-title>
-          <h1>Nuxt chat</h1>
+          <h1>Simple</h1>
         </v-card-title>
         <v-card-text>
           <v-form ref="form" v-model="valid" lazy-validation>
@@ -29,7 +29,7 @@ import { mapMutations } from "vuex";
 export default {
   layout: "empty",
   head: {
-    title: "Welcome to Nuxt chat"
+    title: "Welcome to Simple Chat"
   },
   sockets: {
     connect: function() {
