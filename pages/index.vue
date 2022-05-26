@@ -8,7 +8,7 @@
         </v-snackbar>
 
         <v-card-title>
-          <h1>Simple</h1>
+          <h1>Simple Chat</h1>
         </v-card-title>
         <v-card-text>
           <v-form ref="form" v-model="valid" lazy-validation>
@@ -27,6 +27,7 @@
 <script>
 import { mapMutations } from "vuex";
 export default {
+  name:'InputComponent',
   layout: "empty",
   head: {
     title: "Welcome to Simple Chat"
@@ -53,7 +54,7 @@ export default {
     if (message === "noUser") {
       this.message = "Input your credentials";
     } else if (message === "leftChat") {
-      this.message = "You logged from the chat";
+      this.message = "You logged out from the chat";
     }
 
     this.snackbar = !!this.message;

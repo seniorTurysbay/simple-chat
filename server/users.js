@@ -24,8 +24,7 @@ class Users {
   }
 }
 const user = new Users()
-// user.add({id:1,name:'Dinmukhambet',room:123})
-console.log(user)
+
 module.exports = function() {
   return new Users()
 }
